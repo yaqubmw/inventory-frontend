@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  header {
+    @apply px-8 text-black max-w-full h-10 bg-stone-200;
+  }
+  nav {
+    @apply flex justify-between items-center;
+  }
+}
+@layer components {
+  .logoicon {
+    @apply p-1.5 font-black text-lg;
+  }
+  .btn-menu {
+    @apply py-1.5 font-medium text-gray-700 px-2 md:px-3;
+  }
+  .btn-menu-active {
+    @apply py-1.5 font-medium text-black px-2 md:px-3;
+  }
+  .nav-menu {
+    @apply px-4 flex items-center justify-center;
+  }
+  .nav-right-menu {
+    @apply flex justify-center px-4 py-2;
+  }
+  .sidenav {
+    @apply flex flex-col h-screen sticky top-0
+  }
+}

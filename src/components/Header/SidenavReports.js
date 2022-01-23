@@ -2,65 +2,71 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "components/Header/header.css";
 
-export default function Header() {
+export default function SidenavReports() {
   return (
-    <header>
-      <nav>
-        <NavLink to={"/"}>
-          <div className="logoicon">InventoryApp</div>
-        </NavLink>
-        <div className="nav-menu">
-          <NavLink
-            to={"/"}
-            className={({ isActive }) =>
-              isActive ? "btn-menu-active" : "btn-menu"
-            }
-          >
-            <div>Dashboard</div>
-          </NavLink>
+    <div className="sidenav">
+      <ul>
+        <li>
           <NavLink
             to={"/reports"}
             className={({ isActive }) =>
               isActive ? "btn-menu-active" : "btn-menu"
             }
           >
-            <div>Reports</div>
+            Sales Summary
           </NavLink>
+        </li>
+        <li>
           <NavLink
-            to={"/items"}
+            to={"/reports/trend"}
             className={({ isActive }) =>
               isActive ? "btn-menu-active" : "btn-menu"
             }
           >
-            <div>Items</div>
+            Sales Trend
           </NavLink>
+        </li>
+        <li>
           <NavLink
-            to={"/tax"}
+            to={"/reports/item"}
             className={({ isActive }) =>
               isActive ? "btn-menu-active" : "btn-menu"
             }
           >
-            <div>Tax</div>
+            Item Sales
           </NavLink>
+        </li>
+        <li>
           <NavLink
-            to={"/transaction"}
+            to={"/reports/discount"}
             className={({ isActive }) =>
               isActive ? "btn-menu-active" : "btn-menu"
             }
           >
-            <div>Transaction</div>
+            Discounts
           </NavLink>
+        </li>
+        <li>
           <NavLink
-            to={"/customers"}
+            to={"/reports/tax"}
             className={({ isActive }) =>
               isActive ? "btn-menu-active" : "btn-menu"
             }
           >
-            <div>Customers</div>
+            Taxes
           </NavLink>
-        </div>
-        <div className="nav-right-menu">Setting</div>
-      </nav>
-    </header>
+        </li>
+        <li>
+          <NavLink
+            to={"/reports/compensation"}
+            className={({ isActive }) =>
+              isActive ? "btn-menu-active" : "btn-menu"
+            }
+          >
+            Compensations
+          </NavLink>
+        </li>
+      </ul>
+    </div>
   );
 }
