@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
+import "components/ReportsPage/reports.css"
 
 import Summary from "components/ReportsPage/Summary";
 import SalesTrend from "components/ReportsPage/Trend";
