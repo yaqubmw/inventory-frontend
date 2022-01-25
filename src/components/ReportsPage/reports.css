@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container-tab {
+    @apply flex flex-col w-screen pt-12;
+  }
+  .links {
+    @apply flex items-center justify-center px-4 py-2;
+  }
+  .link {
+    @apply flex items-center px-6 font-medium text-gray-700 border-b-2 border-gray-300 hover:border-gray-500;
+  }
+  .link-active {
+    @apply flex items-center px-6 font-medium text-black border-b-2 border-gray-500;
+  }
+  .tabs {
+  }
+}

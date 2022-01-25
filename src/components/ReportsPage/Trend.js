@@ -1,5 +1,7 @@
-import React from 'react';
+import React from "react";
 
 export default function SalesTrend() {
-  return <div>SalesTrend</div>;
+  return (
+    <div className="w-screen flex justify-center items-center">Sales Trend</div>
+  );
 }
