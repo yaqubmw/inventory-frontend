@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 import PropTypes from "prop-types";
-import { cls } from "utils/utils";
+import { cls } from "utils";
 
 const classes = {
   base: "focus:outline-none transition ease-in-out duration-300 rounded-md",

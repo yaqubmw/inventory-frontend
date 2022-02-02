@@ -4,10 +4,10 @@
 
 @layer base {
   table {
-    @apply table-auto px-2 py-1 border-0 w-5/6 max-w-6xl;
+    @apply table px-2 py-1 border-0 text-sm;
   }
   thead {
-    @apply bg-indigo-300;
+    @apply bg-slate-300;
   }
   tbody {
     @apply px-2 py-1;
@@ -19,12 +19,30 @@
     @apply border-x-0;
   }
   td {
-    @apply border-y-2 py-1 px-2;
+    @apply border-y-2 py-1 px-6;
   }
 }
 
 @layer components {
-    .table-content {
-        @apply flex justify-center
-    }
+  .search {
+    @apply w-full outline-0 px-2 py-1 font-semibold placeholder:text-black placeholder:opacity-50 placeholder:font-semibold;
+  }
+  .content {
+    @apply flex justify-center items-center;
+  }
+  .grid-10 {
+    @apply grid grid-cols-10 shadow-xl gap-y-2;
+  }
+  .grid-search {
+    @apply col-span-10 px-2 shadow-md flex justify-between text-sm;
+  }
+  .grid-table {
+    @apply col-span-10 px-2 py-1;
+  }
+  .tools {
+    @apply flex justify-center items-center px-2 py-1
+  }
+  .comp {
+    @apply px-1 py-1 font-semibold
+  }
 }

@@ -1,21 +1,58 @@
+import React, { useMemo, useState, useEffect } from "react";
 import Table from "components/Elements/Table";
-import React from "react";
+import axios from "axios";
 
-import "components/ReportsPage/reports.css";
+function ItemSales() {
+  // data state to store the TV Maze API data. Its initial value is an empty array
+  const [data, setData] = useState([]);
 
-const data = [
-  { id: 1, Name: "Taka", Age: 88 },
-  { id: 2, Name: "Yanto", Age: 68 },
-  { id: 3, Name: "Subaru", Age: 78 },
-  { id: 5, Name: "Robert", Age: 58 },
-];
+  // Using useEffect to call the API once mounted and set the data
+  useEffect(() => {
+    (async () => {
+      const result = await axios("https://jsonplaceholder.typicode.com/users");
+      setData(result.data);
+    })();
+  }, []);
 
-const header = ["id", "Name", "Age"];
+  const columns = useMemo(
+    () => [
+      {
+        Header: "Profile",
 
-export default function ItemSales() {
+        columns: [
+          {
+            Header: "Name",
+            accessor: "name",
+          },
+          {
+            Header: "Username",
+            accessor: "username",
+          },
+        ],
+      },
+      {
+        Header: "Details",
+
+        columns: [
+          {
+            Header: "Website",
+            accessor: "website",
+          },
+          {
+            Header: "Phone",
+            accessor: "phone",
+          },
+        ],
+      },
+    ],
+    []
+  );
+
   return (
-    <div className="submenu-content">
-      <Table data={data} header={header} />
+    <div className="flex justify-center">
+      <Table columns={columns} data={data} />
     </div>
   );
 }
+
+export default ItemSales;
