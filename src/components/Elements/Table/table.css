@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  table {
+    @apply table-auto px-2 py-1 border-0 w-5/6 max-w-6xl;
+  }
+  thead {
+    @apply bg-indigo-300;
+  }
+  tbody {
+    @apply px-2 py-1;
+  }
+  th {
+    @apply px-4 py-2 border-y-0;
+  }
+  tr {
+    @apply border-x-0;
+  }
+  td {
+    @apply border-y-2 py-1 px-2;
+  }
+}
+
+@layer components {
+    .table-content {
+        @apply flex justify-center
+    }
+}

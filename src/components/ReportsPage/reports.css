@@ -16,6 +16,9 @@
     @apply flex items-center px-6 font-medium text-black border-b-2 border-black;
   }
   .tabs {
-    @apply flex justify-center w-full h-full
+    @apply flex justify-center w-full h-full;
+  }
+  .submenu-content {
+    @apply w-full px-0 py-0 m-auto
   }
 }
