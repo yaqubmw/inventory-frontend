@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "components/Header/header.css";
+import { SettingIcon } from "components/Icons";
 
 export default function Header() {
   return (
@@ -59,7 +60,11 @@ export default function Header() {
             <div>Customers</div>
           </NavLink>
         </div>
-        <div className="nav-right-menu">Setting</div>
+        <div className="nav-right-menu">
+          <div className="icon-24 text-indigo-900">
+            <SettingIcon />
+          </div>
+        </div>
       </nav>
     </header>
   );

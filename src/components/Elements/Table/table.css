@@ -34,15 +34,15 @@
     @apply grid grid-cols-10 shadow-xl gap-y-2;
   }
   .grid-search {
-    @apply col-span-10 px-2 shadow-md flex justify-between text-sm;
+    @apply col-span-10 px-2 shadow-md flex justify-between items-center text-sm;
   }
   .grid-table {
     @apply col-span-10 px-2 py-1;
   }
   .tools {
-    @apply flex justify-center items-center px-2 py-1
+    @apply flex justify-center items-center px-2 py-1;
   }
   .comp {
-    @apply px-1 py-1 font-semibold
+    @apply px-1 py-1 font-semibold;
   }
 }

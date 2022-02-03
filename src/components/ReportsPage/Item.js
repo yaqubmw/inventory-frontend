@@ -3,10 +3,9 @@ import Table from "components/Elements/Table";
 import axios from "axios";
 
 function ItemSales() {
-  // data state to store the TV Maze API data. Its initial value is an empty array
+
   const [data, setData] = useState([]);
 
-  // Using useEffect to call the API once mounted and set the data
   useEffect(() => {
     (async () => {
       const result = await axios("https://jsonplaceholder.typicode.com/users");
@@ -14,39 +13,60 @@ function ItemSales() {
     })();
   }, []);
 
-  const columns = useMemo(
-    () => [
-      {
-        Header: "Profile",
+  const columns = [
+    {
+      Header: "Name",
+      accessor: "name",
+    },
+    {
+      Header: "Username",
+      accessor: "username",
+    },
+    {
+      Header: "Website",
+      accessor: "website",
+    },
+    {
+      Header: "Phone",
+      accessor: "phone",
+    },
+  ];
 
-        columns: [
-          {
-            Header: "Name",
-            accessor: "name",
-          },
-          {
-            Header: "Username",
-            accessor: "username",
-          },
-        ],
-      },
-      {
-        Header: "Details",
+  // COLUMNS WITH HEADER CUK!!
 
-        columns: [
-          {
-            Header: "Website",
-            accessor: "website",
-          },
-          {
-            Header: "Phone",
-            accessor: "phone",
-          },
-        ],
-      },
-    ],
-    []
-  );
+  // const columns = useMemo(
+  //  () => [
+  //    {
+  //      Header: "Profile",
+  //
+  //       columns: [
+  //         {
+  //           Header: "Name",
+  //           accessor: "name",
+  //         },
+  //        {
+  //            Header: "Username",
+  //            accessor: "username",
+  //          },
+  //        ],
+  //      },
+  //      {
+  //        Header: "Details",
+  //
+  //        columns: [
+  //          {
+  //            Header: "Website",
+  //            accessor: "website",
+  //         },
+  //          {
+  //           Header: "Phone",
+  //            accessor: "phone",
+  //         },
+  //        ],
+  //     },
+  //   ],
+  // [];
+  //  );
 
   return (
     <div className="flex justify-center">
