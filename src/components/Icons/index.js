@@ -31,17 +31,57 @@ export function SettingIcon() {
 }
 
 export function ArrowLeftIcon() {
-  return <div></div>;
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      fill="currentColor"
+    >
+      <path d="M0 0h24v24H0V0z" fill="none" />
+      <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" />
+    </svg>
+  );
 }
 
 export function ArrowRightIcon() {
-  return <div></div>;
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      fill="currentColor"
+    >
+      <path d="M0 0h24v24H0V0z" fill="none" />
+      <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+    </svg>
+  );
 }
 
 export function ArrowFirstIcon() {
-  return <div></div>;
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      fill="currentColor"
+    >
+      <path d="M24 0v24H0V0h24z" fill="none" opacity=".87" />
+      <path d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6 1.41-1.41zM6 6h2v12H6V6z" />
+    </svg>
+  );
 }
 
 export function ArrowLastIcon() {
-  return <div></div>;
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      fill="currentColor"
+    >
+      <path d="M0 0h24v24H0V0z" fill="none" opacity=".87" />
+      <path d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6-1.41 1.41zM16 6h2v12h-2V6z" />
+    </svg>
+  );
 }
