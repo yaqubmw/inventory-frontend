@@ -45,4 +45,7 @@
   .comp {
     @apply px-1 py-1 font-semibold;
   }
+  .pagination {
+    @apply flex justify-between items-center
+  }
 }

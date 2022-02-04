@@ -1,7 +1,7 @@
 import React from "react";
 import { useTable, usePagination, useGlobalFilter } from "react-table";
 import "components/Elements/Table/table.css";
-import { SearchIcon } from "components/Icons";
+import { SearchIcon, ArrowFirstIcon, ArrowLastIcon, ArrowLeftIcon, ArrowRightIcon } from "components/Icons";
 
 function Table({ columns, data }) {
   const props = useTable(
@@ -83,21 +83,36 @@ function Table({ columns, data }) {
             </tbody>
           </table>
           <div className="pagination">
-            <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
-              {"<<"}
-            </button>
-            <button onClick={() => previousPage()} disabled={!canPreviousPage}>
-              {"<"}
-            </button>
-            <button onClick={() => nextPage()} disabled={!canNextPage}>
-              {">"}
-            </button>
-            <button
-              onClick={() => gotoPage(pageCount - 1)}
-              disabled={!canNextPage}
-            >
-              {">>"}
-            </button>
+            <div className="pagenav">
+              <button
+                className="icon-24"
+                onClick={() => gotoPage(0)}
+                disabled={!canPreviousPage}
+              >
+                {<ArrowFirstIcon />}
+              </button>
+              <button
+                className="icon-24"
+                onClick={() => previousPage()}
+                disabled={!canPreviousPage}
+              >
+                {<ArrowLeftIcon />}
+              </button>
+              <button
+                className="icon-24"
+                onClick={() => nextPage()}
+                disabled={!canNextPage}
+              >
+                {<ArrowRightIcon />}
+              </button>
+              <button
+                className="icon-24"
+                onClick={() => gotoPage(pageCount - 1)}
+                disabled={!canNextPage}
+              >
+                {<ArrowLastIcon />}
+              </button>
+            </div>
             <span>
               Page
               <strong>
