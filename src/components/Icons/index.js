@@ -85,3 +85,53 @@ export function ArrowLastIcon() {
     </svg>
   );
 }
+
+export function SortDownIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      fill="currentColor"
+    >
+      <path d="M3 3a1 1 0 000 2h11a1 1 0 100-2H3zM3 7a1 1 0 000 2h7a1 1 0 100-2H3zM3 11a1 1 0 100 2h4a1 1 0 100-2H3zM15 8a1 1 0 10-2 0v5.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L15 13.586V8z" />
+    </svg>
+  );
+}
+
+export function SortUpIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      fill="currentColor"
+    >
+      <path d="M3 3a1 1 0 000 2h11a1 1 0 100-2H3zM3 7a1 1 0 000 2h5a1 1 0 000-2H3zM3 11a1 1 0 100 2h4a1 1 0 100-2H3zM13 16a1 1 0 102 0v-5.586l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 101.414 1.414L13 10.414V16z" />
+    </svg>
+  );
+}
+
+export function SortIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      fill="currentColor"
+    >
+      <path d="M0 0h24v24H0V0z" fill="none" />
+      <path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z" />
+    </svg>
+  );
+}
+
+/*
+
+  export function icon() {
+  return (
+    <svg></svg>
+  );
+}
+
+*/

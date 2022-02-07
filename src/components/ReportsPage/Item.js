@@ -1,9 +1,8 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Table from "components/Elements/Table";
 import axios from "axios";
 
 function ItemSales() {
-
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -13,24 +12,28 @@ function ItemSales() {
     })();
   }, []);
 
-  const columns = [
-    {
-      Header: "Name",
-      accessor: "name",
-    },
-    {
-      Header: "Username",
-      accessor: "username",
-    },
-    {
-      Header: "Website",
-      accessor: "website",
-    },
-    {
-      Header: "Phone",
-      accessor: "phone",
-    },
-  ];
+  const columns = React.useMemo(
+    () => [
+      {
+        Header: "Name",
+        accessor: "name",
+      },
+      {
+        Header: "Username",
+        accessor: "username",
+      },
+      {
+        Header: "Website",
+        accessor: "website",
+      },
+      {
+        Header: "Phone",
+        accessor: "phone",
+        Filter: DefaultColumnFilter,
+      },
+    ],
+    []
+  );
 
   // COLUMNS WITH HEADER CUK!!
 

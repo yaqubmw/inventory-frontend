@@ -4,7 +4,7 @@
 
 @layer base {
   table {
-    @apply table px-2 py-1 border-0 text-sm;
+    @apply table-auto px-2 py-1 border-0 text-sm w-full;
   }
   thead {
     @apply bg-slate-300;
@@ -28,16 +28,16 @@
     @apply w-full outline-0 px-2 py-1 font-semibold placeholder:text-black placeholder:opacity-50 placeholder:font-semibold;
   }
   .content {
-    @apply flex justify-center items-center;
+    @apply flex justify-center items-center w-full;
   }
   .grid-10 {
-    @apply grid grid-cols-10 shadow-xl gap-y-2;
+    @apply grid grid-cols-10 shadow-xl gap-y-2 w-full;
   }
   .grid-search {
-    @apply col-span-10 px-2 shadow-md flex justify-between items-center text-sm;
+    @apply col-span-10 px-2 shadow-md flex justify-between items-center text-sm w-full;
   }
   .grid-table {
-    @apply col-span-10 px-2 py-1;
+    @apply col-span-10 px-2 py-1 shadow-md flex justify-center items-center text-sm;
   }
   .tools {
     @apply flex justify-center items-center px-2 py-1;
@@ -45,7 +45,19 @@
   .comp {
     @apply px-1 py-1 font-semibold;
   }
-  .pagination {
-    @apply flex justify-between items-center
+  .grid-pagination {
+    @apply col-span-10 p-2 shadow-md flex justify-between items-center text-sm;
+  }
+  .pagenav {
+    @apply flex justify-center items-center;
+  }
+  .pagenavmenu {
+    @apply bg-gray-300
+  }
+  .pagesize {
+    @apply bg-white outline-0 border-none font-medium;
+  }
+  .pageof {
+    @apply text-center;
   }
 }
