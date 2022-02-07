@@ -29,7 +29,6 @@ function ItemSales() {
       {
         Header: "Phone",
         accessor: "phone",
-        Filter: DefaultColumnFilter,
       },
     ],
     []
@@ -58,7 +57,7 @@ function ItemSales() {
   //
   //        columns: [
   //          {
-  //            Header: "Website",
+  //            Header: "Webs        Filter: DefaultColumnFilter,ite",
   //            accessor: "website",
   //         },
   //          {

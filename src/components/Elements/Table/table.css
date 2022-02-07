@@ -45,7 +45,6 @@
   .comp {
     @apply px-1 py-1 font-semibold;
   }
-<<<<<<< HEAD
   .grid-pagination {
     @apply col-span-10 p-2 shadow-md flex justify-between items-center text-sm;
   }
@@ -53,7 +52,7 @@
     @apply flex justify-center items-center;
   }
   .pagenavmenu {
-    @apply bg-gray-300
+    @apply mx-px py-2 w-8 outline-0;
   }
   .pagesize {
     @apply bg-white outline-0 border-none font-medium;
@@ -61,6 +60,4 @@
   .pageof {
     @apply text-center;
   }
-=======
->>>>>>> parent of c1ddfab (styling pagination)
 }
