@@ -25,7 +25,10 @@
 
 @layer components {
   .search {
-    @apply w-full outline-0 px-2 py-1 font-semibold placeholder:text-black placeholder:opacity-50 placeholder:font-semibold;
+    @apply w-full outline-0 px-2 py-1 font-semibold placeholder:text-black placeholder:opacity-50 placeholder:font-semibold text-sm;
+  }
+  .ph-search {
+    @apply px-1 outline-0 text-sm placeholder:text-sm placeholder:font-normal;
   }
   .content {
     @apply flex justify-center items-center w-full;
@@ -49,7 +52,7 @@
     @apply col-span-10 p-2 shadow-md flex justify-between items-center text-sm;
   }
   .pagenav {
-    @apply flex justify-center items-center;
+    @apply flex justify-center items-center px-2;
   }
   .pagenavmenu {
     @apply mx-px py-2 w-8 outline-0;
@@ -59,5 +62,8 @@
   }
   .pageof {
     @apply text-center;
+  }
+  .goto {
+    @apply flex justify-center items-center px-2;
   }
 }
