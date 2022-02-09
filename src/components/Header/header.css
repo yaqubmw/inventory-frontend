@@ -4,7 +4,7 @@
 
 @layer base {
   header {
-    @apply px-8 text-black max-w-full h-10 bg-stone-200;
+    @apply px-8 text-black max-w-full h-10 bg-green-200;
   }
   nav {
     @apply flex justify-between items-center;
@@ -15,10 +15,10 @@
     @apply p-1.5 font-black text-lg;
   }
   .btn-menu {
-    @apply py-1.5 font-medium text-gray-700 px-2 md:px-3 transition duration-300 hover:text-gray-800;
+    @apply py-1.5 font-semibold text-gray-800 px-2 md:px-3 transition duration-300 hover:text-gray-800;
   }
   .btn-menu-active {
-    @apply py-1.5 font-medium text-black px-2 md:px-3;
+    @apply py-1.5 font-bold text-black px-2 md:px-3;
   }
   .nav-menu {
     @apply px-4 flex items-center justify-center;

@@ -7,28 +7,31 @@
     @apply table-auto px-2 py-1 border-0 text-sm w-full;
   }
   thead {
-    @apply bg-slate-300;
+    @apply bg-green-500;
   }
   tbody {
     @apply px-2 py-1;
   }
   th {
-    @apply px-4 py-2 border-y-0;
+    @apply px-4 py-2 w-48;
   }
   tr {
-    @apply border-x-0;
+    @apply border-y-0;
   }
   td {
-    @apply border-y-2 py-1 px-6;
+    @apply border-b-2 py-1 px-2 text-center;
   }
 }
 
 @layer components {
+  .tr-hover {
+    @apply bg-white hover:bg-green-200;
+  }
   .search {
-    @apply w-full outline-0 px-2 py-1 font-semibold placeholder:text-black placeholder:opacity-50 placeholder:font-semibold text-sm;
+    @apply flex items-center w-full outline-0 px-2 py-1 font-semibold placeholder:text-black placeholder:opacity-50 placeholder:font-semibold text-sm;
   }
   .ph-search {
-    @apply px-1 outline-0 text-sm placeholder:text-sm placeholder:font-normal;
+    @apply p-1 ml-2 rounded outline-0 text-sm placeholder:text-sm placeholder:font-normal w-48;
   }
   .content {
     @apply flex justify-center items-center w-full;
@@ -37,10 +40,10 @@
     @apply grid grid-cols-10 shadow-xl gap-y-2 w-full;
   }
   .grid-search {
-    @apply col-span-10 px-2 shadow-md flex justify-between items-center text-sm w-full;
+    @apply bg-green-300 col-span-10 px-2 shadow-md flex justify-between items-center text-sm w-full rounded-md;
   }
   .grid-table {
-    @apply col-span-10 px-2 py-1 shadow-md flex justify-center items-center text-sm;
+    @apply col-span-10 px-2 py-1 shadow-md flex justify-center items-center text-sm rounded-md;
   }
   .tools {
     @apply flex justify-center items-center px-2 py-1;
@@ -49,7 +52,7 @@
     @apply px-1 py-1 font-semibold;
   }
   .grid-pagination {
-    @apply col-span-10 p-2 shadow-md flex justify-between items-center text-sm;
+    @apply col-span-10 rounded-md p-2 shadow-md flex justify-between items-center text-sm;
   }
   .pagenav {
     @apply flex justify-center items-center px-2;
@@ -58,12 +61,16 @@
     @apply mx-px py-2 w-8 outline-0;
   }
   .pagesize {
-    @apply bg-white outline-0 border-none font-medium;
+    @apply bg-white outline-0 border-none font-medium p-1;
   }
+
   .pageof {
     @apply text-center;
   }
   .goto {
-    @apply flex justify-center items-center px-2;
+    @apply flex flex-col justify-center px-2;
+  }
+  .gotoinput {
+    @apply w-10 bg-slate-200 rounded p-1;
   }
 }

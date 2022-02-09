@@ -71,7 +71,7 @@ function ItemSale() {
   //  );
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center relative">
       <Table columns={columns} data={data} />
     </div>
   );

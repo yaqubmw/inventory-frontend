@@ -9,6 +9,17 @@ import {
 import "components/Elements/Table/table.css";
 import { matchSorter } from "match-sorter";
 
+import {
+  SearchIcon,
+  ArrowFirstIcon,
+  ArrowLastIcon,
+  ArrowLeftIcon,
+  ArrowRightIcon,
+  SortDownIcon,
+  SortIcon,
+  SortUpIcon,
+} from "components/Icons";
+
 function GlobalFilter({
   preGlobalFilteredRows,
   globalFilter,
@@ -22,7 +33,9 @@ function GlobalFilter({
 
   return (
     <span className="search">
-      Search:{" "}
+      <div className="icon-24">
+        <SearchIcon />
+      </div>{" "}
       <input
         className="ph-search"
         value={value || ""}
@@ -37,8 +50,7 @@ function GlobalFilter({
 }
 
 // Define a default UI for filtering
-function DefaultColumnFilter(){
-
+function DefaultColumnFilter() {
   return (
     <div>
       {/* No need Default muhehehe, the ui scripts moved to NormalColumnFilter for being called only
@@ -61,13 +73,13 @@ export function NormalColumnFilter({
 
   return (
     <div>
-      <input
-      value={filterValue || ''}
-      onChange={e => {
-        setFilter(e.target.value || undefined)
-      }}
-      placeholder={`Search ${count} records...`}
-    />
+      <input className="ph-search"
+        value={filterValue || ""}
+        onChange={(e) => {
+          setFilter(e.target.value || undefined);
+        }}
+        placeholder={`Search ${count} records...`}
+      />
     </div>
   );
 }
@@ -298,7 +310,7 @@ function Table({ columns, data }) {
             {page.map((row, i) => {
               prepareRow(row);
               return (
-                <tr {...row.getRowProps()}>
+                <tr className="tr-hover" {...row.getRowProps()}>
                   {row.cells.map((cell) => {
                     return (
                       <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
@@ -342,41 +354,40 @@ function Table({ columns, data }) {
             {">>"}
           </button>{" "}
         </div>
-        <span className="pageof">
-          Page{" "}
-          <strong>
-            {pageIndex + 1} of {pageOptions.length}
-          </strong>{" "}
-        </span>
-
         <div className="goto">
+          {" "}
+          <span className="pageof">
+            Page{" "}
+            <strong>
+              {pageIndex + 1} of {pageOptions.length}
+            </strong>{" "}
+          </span>
           <span>
-            | Go to page:{" "}
+            Go to page:{" "}
             <input
-              className="pagesize"
+              className="gotoinput"
               type="number"
               defaultValue={pageIndex + 1}
               onChange={(e) => {
                 const page = e.target.value ? Number(e.target.value) - 1 : 0;
                 gotoPage(page);
               }}
-              style={{ width: "50px" }}
             />
           </span>
-          <select
-            className="pagesize"
-            value={pageSize}
-            onChange={(e) => {
-              setPageSize(Number(e.target.value));
-            }}
-          >
-            {[5, 10, 20, 30, 40, 50].map((pageSize) => (
-              <option key={pageSize} value={pageSize}>
-                Show {pageSize}
-              </option>
-            ))}
-          </select>
         </div>
+        <select
+          className="pagesize"
+          value={pageSize}
+          onChange={(e) => {
+            setPageSize(Number(e.target.value));
+          }}
+        >
+          {[5, 10, 20, 30, 40, 50].map((pageSize) => (
+            <option key={pageSize} value={pageSize}>
+              Show {pageSize}
+            </option>
+          ))}
+        </select>
       </div>
     </div>
   );
