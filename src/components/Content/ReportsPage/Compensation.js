@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-export default function Discounts() {
+export default function Compensation() {
   return (
     <div className="w-screen flex justify-center items-center">
-      <p>Discounts</p>
+      Compensations
     </div>
   );
 }

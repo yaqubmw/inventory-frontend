@@ -1,12 +1,11 @@
 import React from "react";
-
 import DashboardLayout from "components/Layout/DasboardLayout";
-import DashboardContent from "components/Content/Dashboard";
+import ReportsTab from "components/Content/ReportsPage";
 
-export default function Dashboard() {
+export default function Report() {
   return (
     <DashboardLayout>
-      <DashboardContent />
+      <ReportsTab />
     </DashboardLayout>
   );
 }

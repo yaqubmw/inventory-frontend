@@ -135,3 +135,24 @@ export function SortIcon() {
 }
 
 */
+
+export function SmallSortUp() {
+  return (
+    <svg viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="16" height="31" fill="none" />
+      <g clip-path="url(#clip0_0_1)">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0 11.5H15.4L7.7 0L0 11.5Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_0_1">
+          <rect width="15.4" height="30.7" fill="none" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}

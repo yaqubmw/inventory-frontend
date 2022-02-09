@@ -1,13 +1,13 @@
 import React from "react";
 import { Routes, Route, NavLink } from "react-router-dom";
-import "components/ReportsPage/reports.css";
+import "./reports.css";
 
-import Summary from "components/ReportsPage/Summary";
-import SalesTrend from "components/ReportsPage/Trend";
-import ItemSales from "components/ReportsPage/Item";
-import Discounts from "components/ReportsPage/Discount";
-import TaxReports from "components/ReportsPage/Tax";
-import Compensations from "components/ReportsPage/Compensation";
+import Summary from "./Summary";
+import SalesTrend from "./Trend";
+import ItemSale from "./Item";
+import Discount from "./Discount";
+import TaxReport from "./Tax";
+import Compensation from "./Compensation";
 
 export default function ReportsTab() {
   return (
@@ -56,10 +56,10 @@ export default function ReportsTab() {
             <Route index element={<Summary />} />
             <Route path="summary" element={<Summary />} />
             <Route path="trend" element={<SalesTrend />} />
-            <Route path="item" element={<ItemSales />} />
-            <Route path="discount" element={<Discounts />} />
-            <Route path="tax" element={<TaxReports />} />
-            <Route path="compensation" element={<Compensations />} />
+            <Route path="item" element={<ItemSale />} />
+            <Route path="discount" element={<Discount />} />
+            <Route path="tax" element={<TaxReport />} />
+            <Route path="compensation" element={<Compensation />} />
           </Routes>
         </div>
       </div>

@@ -2,8 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  section {
+    @apply w-full
+  }
+}
+
 @layer components {
   .icon-24 {
     @apply w-6 h-6;
+  }
+  .main-content {
+    @apply container
   }
 }

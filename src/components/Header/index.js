@@ -20,20 +20,20 @@ export default function Header() {
             <div>Dashboard</div>
           </NavLink>
           <NavLink
-            to={"/reports"}
+            to={"/report"}
             className={({ isActive }) =>
               isActive ? "btn-menu-active" : "btn-menu"
             }
           >
-            <div>Reports</div>
+            <div>Report</div>
           </NavLink>
           <NavLink
-            to={"/items"}
+            to={"/item"}
             className={({ isActive }) =>
               isActive ? "btn-menu-active" : "btn-menu"
             }
           >
-            <div>Items</div>
+            <div>Item</div>
           </NavLink>
           <NavLink
             to={"/tax"}
@@ -52,12 +52,12 @@ export default function Header() {
             <div>Transaction</div>
           </NavLink>
           <NavLink
-            to={"/customers"}
+            to={"/customer"}
             className={({ isActive }) =>
               isActive ? "btn-menu-active" : "btn-menu"
             }
           >
-            <div>Customers</div>
+            <div>Customer</div>
           </NavLink>
         </div>
         <div className="nav-right-menu">

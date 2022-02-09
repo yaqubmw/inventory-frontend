@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Table from "components/Elements/Table";
 import axios from "axios";
 
-function ItemSales() {
+function ItemSale() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -77,4 +77,4 @@ function ItemSales() {
   );
 }
 
-export default ItemSales;
+export default ItemSale;

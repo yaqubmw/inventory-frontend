@@ -1,9 +1,6 @@
 import React from 'react';
+import DashboardLayout from 'components/Layout/DasboardLayout';
 
 export default function Tax() {
-  return (
-    <>
-      <Header />
-    </>
-  );
+  return <DashboardLayout></DashboardLayout>;
 }
