@@ -32,10 +32,10 @@ function GlobalFilter({
   }, 200);
 
   return (
-    <span className="search">
+    <label className="search">
       <div className="icon-24">
         <SearchIcon />
-      </div>{" "}
+      </div>
       <input
         className="ph-search"
         value={value || ""}
@@ -45,7 +45,7 @@ function GlobalFilter({
         }}
         placeholder={` ${count} records...`}
       />
-    </span>
+    </label>
   );
 }
 
@@ -73,7 +73,8 @@ export function NormalColumnFilter({
 
   return (
     <div>
-      <input className="ph-search"
+      <input
+        className="ph-search"
         value={filterValue || ""}
         onChange={(e) => {
           setFilter(e.target.value || undefined);
@@ -313,7 +314,11 @@ function Table({ columns, data }) {
                 <tr className="tr-hover" {...row.getRowProps()}>
                   {row.cells.map((cell) => {
                     return (
-                      <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
+                      <td {...cell.getCellProps()}>
+                        <span className={cell.column.className}>
+                          {cell.render("Cell")}
+                        </span>
+                      </td>
                     );
                   })}
                 </tr>

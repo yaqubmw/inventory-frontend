@@ -2,12 +2,12 @@ import React from "react";
 import { Routes, Route, NavLink } from "react-router-dom";
 import "./reports.css";
 
-import Summary from "./Summary";
-import SalesTrend from "./Trend";
-import ItemSale from "./Item";
-import Discount from "./Discount";
-import TaxReport from "./Tax";
-import Compensation from "./Compensation";
+import Summary from "components/Content/ReportsPage/Summary";
+import SalesTrend from "components/Content/ReportsPage/Trend";
+import ItemSale from "components/Content/ReportsPage/Item";
+import Discount from "components/Content/ReportsPage/Discount";
+import TaxReport from "components/Content/ReportsPage/Tax";
+import Compensation from "components/Content/ReportsPage/Compensation";
 
 export default function ReportsTab() {
   return (

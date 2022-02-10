@@ -25,6 +25,7 @@ function ItemSale() {
       {
         Header: "Website",
         accessor: "website",
+        className: "pill",
       },
       {
         Header: "Phone",
