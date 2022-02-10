@@ -1,0 +1,122 @@
+[
+  {
+    "sku": "19204nk5829",
+    "item": "Tahu",
+    "qtysold": 34,
+    "qtystock": 90,
+    "status": "Safe",
+    "sales": 900000
+  },
+  {
+    "sku": "43jo57uyu07",
+    "item": "Tempe",
+    "qtysold": 4,
+    "qtystock": 4,
+    "status": "Alert",
+    "sales": 90000
+  },
+  {
+    "sku": "ki098gyt621",
+    "item": "Beras",
+    "qtysold": 99,
+    "qtystock": 2,
+    "status": "Alert",
+    "sales": 9000000
+  },
+  {
+    "sku": "8776hju89t5",
+    "item": "Terong",
+    "qtysold": 90,
+    "qtystock": 89,
+    "status": "Safe",
+    "sales": 5000000
+  },
+  {
+    "sku": "koi8873hg3",
+    "item": "Waluh",
+    "qtysold": 0,
+    "qtystock": 90,
+    "status": "Safe",
+    "sales": 0
+  },
+  {
+    "sku": "987hhh657g",
+    "item": "Pete",
+    "qtysold": 78,
+    "qtystock": 76,
+    "status": "Safe",
+    "sales": 8700000
+  },
+  {
+    "sku": "123kok980k",
+    "item": "Rawit",
+    "qtysold": 9,
+    "qtystock": 76,
+    "status": "Safe",
+    "sales": 90800
+  },
+  {
+    "sku": "980uugt657",
+    "item": "Bawang Merah",
+    "qtysold": 100,
+    "qtystock": 7,
+    "status": "Alert",
+    "sales": 10000000
+  },
+  {
+    "sku": "0987kjhg56",
+    "item": "Bawang Putih",
+    "qtysold": 120,
+    "qtystock": 9,
+    "status": "Alert",
+    "sales": 12000000
+  },
+  {
+    "sku": "097gfggt667",
+    "item": "Mengkreng",
+    "qtysold": 20,
+    "qtystock": 909,
+    "status": "Safe",
+    "sales": 2000
+  },
+  {
+    "sku": "0987ghhy65",
+    "item": "Bawang Daun",
+    "qtysold": 98,
+    "qtystock": 987,
+    "status": "Safe",
+    "sales": 3373700
+  },
+  {
+    "sku": "00977bbu33",
+    "item": "Kelapa Tua",
+    "qtysold": 9,
+    "qtystock": 123,
+    "status": "Safe",
+    "sales": 81000
+  },
+  {
+    "sku": "928hu27ebr",
+    "item": "Jagung",
+    "qtysold": 900,
+    "qtystock": 10,
+    "status": "Alert",
+    "sales": 900000000
+  },
+  {
+    "sku": "793hhui844",
+    "item": "Kangkung",
+    "qtysold": 8,
+    "qtystock": 123,
+    "status": "Safe",
+    "sales": 8000000
+  },
+  {
+    "sku": "9937364uhh",
+    "item": "Bayam",
+    "qtysold": 90,
+    "qtystock": 33,
+    "status": "Safe",
+    "sales": 900000
+  }
+]

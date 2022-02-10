@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Table from "components/Elements/Table";
 import axios from "axios";
+import itemdata from "api/itemdata.json";
 
 function ItemSale() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     (async () => {
-      const result = await axios("https://jsonplaceholder.typicode.com/users");
+      const result = await axios("EMBUH");
       setData(result.data);
     })();
   }, []);
@@ -15,21 +16,29 @@ function ItemSale() {
   const columns = React.useMemo(
     () => [
       {
-        Header: "Name",
-        accessor: "name",
+        Header: "SKU",
+        accessor: "sku",
       },
       {
-        Header: "Username",
-        accessor: "username",
+        Header: "Item",
+        accessor: "item",
       },
       {
-        Header: "Website",
-        accessor: "website",
-        className: "pill3",
+        Header: "Qty Sold",
+        accessor: "qtysold",
       },
       {
-        Header: "Phone",
-        accessor: "phone",
+        Header: "Stock",
+        accessor: "qtystock",
+      },
+      {
+        Header: "Status",
+        accessor: "status",
+        className: row => (row.status == "Safe" ? "pill1" : "pill2" ),
+      },
+      {
+        Header: "Sales",
+        accessor: "sales",
       },
     ],
     []
@@ -73,7 +82,7 @@ function ItemSale() {
 
   return (
     <div className="flex justify-center relative">
-      <Table columns={columns} data={data} />
+      <Table columns={columns} data={itemdata} />
     </div>
   );
 }
