@@ -4,14 +4,14 @@ import axios from "axios";
 import itemdata from "api/itemdata.json";
 
 function ItemSale() {
-  const [data, setData] = useState([]);
+  /* const [data, setData] = useState([]);
 
   useEffect(() => {
     (async () => {
       const result = await axios("EMBUH");
       setData(result.data);
     })();
-  }, []);
+  }, []); */
 
   const columns = React.useMemo(
     () => [
@@ -34,7 +34,6 @@ function ItemSale() {
       {
         Header: "Status",
         accessor: "status",
-        className: row => (row.status == "Safe" ? "pill1" : "pill2" ),
       },
       {
         Header: "Sales",
